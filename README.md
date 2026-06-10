@@ -1,6 +1,6 @@
 # Registration Report — GitHub Pages
 
-Interactive registration dashboard for May 11 – Jun 4, 2026.
+Interactive registration dashboard for May 11 – Jun 10, 2026.
 
 **Tabs:** Overview | Asia & Oceania | Americas | Middle & Eastern Europe | Swiss MU
 
