@@ -34,6 +34,7 @@
   .progress-bar.lightblue { background:#4CB1FF; }
   .progress-bar.navy { background:#00144A; }
   .pct-label { font-size:12px; color:#6B7280; }
+  .eco-section { display:flex; flex-direction:column; }
   .donut-container { position:relative; width:220px; height:220px; margin:16px auto 20px; }
   .donut-center { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; }
   .donut-center .dc-num { font-size:26px; font-weight:700; color:#00144A; line-height:1; }
@@ -89,7 +90,7 @@
 <div id="tab-overview" class="tab-content active">
 <div class="row-3">
   <div class="card"><div class="kpi-number blue">6,606</div><div class="kpi-label">Total Registrations</div></div>
-  <div class="card"><div class="kpi-number navy">2,271</div><div class="kpi-label">Unique Companies</div></div>
+  <div class="card"><div class="kpi-number navy">2,180</div><div class="kpi-label">Unique Companies</div></div>
   <div class="card"><div class="kpi-number lightblue">80</div><div class="kpi-label">Countries Reached</div></div>
 </div>
 <div class="row-3">
@@ -103,14 +104,14 @@
     <div class="donut-container"><canvas id="donutChart"></canvas><div class="donut-center"><div class="dc-num">6,606</div><div class="dc-label">Total</div></div></div>
     <div class="eco-legend">
       <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#00144A"></div>SAP Employees</div><div class="eco-legend-right">2,221 &#183; 33.6%</div></div>
-      <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#0070F2"></div>Partners</div><div class="eco-legend-right">2,020 &#183; 30.6%</div></div>
-      <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#4CB1FF"></div>Customers</div><div class="eco-legend-right">1,536 &#183; 23.3%</div></div>
+      <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#0070F2"></div>Partners</div><div class="eco-legend-right">2,125 &#183; 32.2%</div></div>
+      <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#4CB1FF"></div>Customers</div><div class="eco-legend-right">1,431 &#183; 21.7%</div></div>
       <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#89D1FF"></div>Consultants</div><div class="eco-legend-right">634 &#183; 9.6%</div></div>
       <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#D1EFFF;border:1px solid #89D1FF"></div>Others</div><div class="eco-legend-right">195 &#183; 3.0%</div></div>
     </div>
   </div>
   <div class="card">
-    <div class="section-tag">Geographic Reach &#183; Top 10 Countries</div>
+    <div class="section-tag geo-header">Geographic Reach &#183; Top 10 Countries</div>
     <div class="geo-subtitle">Top 3 countries account for 59.2% of registrations</div>
     <div class="geo-rows">
       <div class="geo-row"><span class="geo-label">United States</span><div class="geo-bar-wrap"><div class="geo-bar" style="width:100%;background:#0070F2"></div></div><span class="geo-value">1,602 <span class="geo-pct">(24.3%)</span></span></div>
@@ -128,33 +129,33 @@
 </div>
 <div class="row-2">
   <div class="card">
-    <div class="section-tag">Top Partner Companies</div><div class="co-meta">2,019 registrations &#183; 671 unique companies</div>
+    <div class="section-tag">Top Partner Companies</div><div class="co-meta">2,124 registrations &#183; 607 unique companies</div>
     <div class="co-rows">
-      <div class="co-row"><span class="co-label">Infosys</span><div class="co-bar-wrap"><div class="co-bar" style="width:100%;background:#0070F2"></div></div><span class="co-value">227</span></div>
-      <div class="co-row"><span class="co-label">EY</span><div class="co-bar-wrap"><div class="co-bar" style="width:71.4%;background:#0070F2"></div></div><span class="co-value">162</span></div>
-      <div class="co-row"><span class="co-label">IBM</span><div class="co-bar-wrap"><div class="co-bar" style="width:41.4%;background:#4CB1FF"></div></div><span class="co-value">94</span></div>
-      <div class="co-row"><span class="co-label">Capgemini</span><div class="co-bar-wrap"><div class="co-bar" style="width:38.8%;background:#4CB1FF"></div></div><span class="co-value">88</span></div>
-      <div class="co-row"><span class="co-label">Accenture</span><div class="co-bar-wrap"><div class="co-bar" style="width:36.1%;background:#4CB1FF"></div></div><span class="co-value">82</span></div>
-      <div class="co-row"><span class="co-label">TCS</span><div class="co-bar-wrap"><div class="co-bar" style="width:25.1%;background:#89D1FF"></div></div><span class="co-value">57</span></div>
-      <div class="co-row"><span class="co-label">Deloitte</span><div class="co-bar-wrap"><div class="co-bar" style="width:20.7%;background:#89D1FF"></div></div><span class="co-value">47</span></div>
-      <div class="co-row"><span class="co-label">Wipro</span><div class="co-bar-wrap"><div class="co-bar" style="width:19.8%;background:#89D1FF"></div></div><span class="co-value">45</span></div>
-      <div class="co-row"><span class="co-label">Cognizant</span><div class="co-bar-wrap"><div class="co-bar" style="width:19.4%;background:#B8DCFF"></div></div><span class="co-value">44</span></div>
-      <div class="co-row"><span class="co-label">HCL</span><div class="co-bar-wrap"><div class="co-bar" style="width:18.9%;background:#B8DCFF"></div></div><span class="co-value">43</span></div>
+      <div class="co-row"><span class="co-label">Infosys</span><div class="co-bar-wrap"><div class="co-bar" style="width:100%;background:#0070F2"></div></div><span class="co-value">246</span></div>
+      <div class="co-row"><span class="co-label">Cognizant</span><div class="co-bar-wrap"><div class="co-bar" style="width:81.3%;background:#0070F2"></div></div><span class="co-value">200</span></div>
+      <div class="co-row"><span class="co-label">EY</span><div class="co-bar-wrap"><div class="co-bar" style="width:66.3%;background:#4CB1FF"></div></div><span class="co-value">163</span></div>
+      <div class="co-row"><span class="co-label">IBM</span><div class="co-bar-wrap"><div class="co-bar" style="width:39%;background:#4CB1FF"></div></div><span class="co-value">96</span></div>
+      <div class="co-row"><span class="co-label">Capgemini</span><div class="co-bar-wrap"><div class="co-bar" style="width:36.2%;background:#4CB1FF"></div></div><span class="co-value">89</span></div>
+      <div class="co-row"><span class="co-label">Accenture</span><div class="co-bar-wrap"><div class="co-bar" style="width:34.6%;background:#89D1FF"></div></div><span class="co-value">85</span></div>
+      <div class="co-row"><span class="co-label">Wipro</span><div class="co-bar-wrap"><div class="co-bar" style="width:23.6%;background:#89D1FF"></div></div><span class="co-value">58</span></div>
+      <div class="co-row"><span class="co-label">TCS</span><div class="co-bar-wrap"><div class="co-bar" style="width:23.6%;background:#89D1FF"></div></div><span class="co-value">58</span></div>
+      <div class="co-row"><span class="co-label">Deloitte</span><div class="co-bar-wrap"><div class="co-bar" style="width:19.5%;background:#B8DCFF"></div></div><span class="co-value">48</span></div>
+      <div class="co-row"><span class="co-label">PwC</span><div class="co-bar-wrap"><div class="co-bar" style="width:18.3%;background:#B8DCFF"></div></div><span class="co-value">45</span></div>
     </div>
   </div>
   <div class="card">
-    <div class="section-tag">Top Customer Companies</div><div class="co-meta">1,534 registrations &#183; 1,100 unique companies</div>
+    <div class="section-tag">Top Customer Companies</div><div class="co-meta">1,429 registrations &#183; 1,064 unique companies</div>
     <div class="co-rows">
-      <div class="co-row"><span class="co-label">Infosys</span><div class="co-bar-wrap"><div class="co-bar" style="width:100%;background:#00144A"></div></div><span class="co-value">19</span></div>
-      <div class="co-row"><span class="co-label">Agilent Technologies</span><div class="co-bar-wrap"><div class="co-bar" style="width:89.5%;background:#00144A"></div></div><span class="co-value">17</span></div>
-      <div class="co-row"><span class="co-label">BASF</span><div class="co-bar-wrap"><div class="co-bar" style="width:78.9%;background:#002A86"></div></div><span class="co-value">15</span></div>
-      <div class="co-row"><span class="co-label">Wipro</span><div class="co-bar-wrap"><div class="co-bar" style="width:68.4%;background:#002A86"></div></div><span class="co-value">13</span></div>
-      <div class="co-row"><span class="co-label">ALDI</span><div class="co-bar-wrap"><div class="co-bar" style="width:68.4%;background:#0040C8"></div></div><span class="co-value">13</span></div>
-      <div class="co-row"><span class="co-label">E.ON</span><div class="co-bar-wrap"><div class="co-bar" style="width:63.2%;background:#0070F2"></div></div><span class="co-value">12</span></div>
-      <div class="co-row"><span class="co-label">Danfoss A/S</span><div class="co-bar-wrap"><div class="co-bar" style="width:52.6%;background:#4CB1FF"></div></div><span class="co-value">10</span></div>
-      <div class="co-row"><span class="co-label">Cognizant</span><div class="co-bar-wrap"><div class="co-bar" style="width:52.6%;background:#4CB1FF"></div></div><span class="co-value">10</span></div>
-      <div class="co-row"><span class="co-label">Beiersdorf Shared Services</span><div class="co-bar-wrap"><div class="co-bar" style="width:47.4%;background:#89D1FF"></div></div><span class="co-value">9</span></div>
-      <div class="co-row"><span class="co-label">Ford Motor Company</span><div class="co-bar-wrap"><div class="co-bar" style="width:36.8%;background:#89D1FF"></div></div><span class="co-value">7</span></div>
+      <div class="co-row"><span class="co-label">Agilent Technologies</span><div class="co-bar-wrap"><div class="co-bar" style="width:100%;background:#00144A"></div></div><span class="co-value">17</span></div>
+      <div class="co-row"><span class="co-label">BASF</span><div class="co-bar-wrap"><div class="co-bar" style="width:88.2%;background:#00144A"></div></div><span class="co-value">15</span></div>
+      <div class="co-row"><span class="co-label">ALDI</span><div class="co-bar-wrap"><div class="co-bar" style="width:76.5%;background:#002A86"></div></div><span class="co-value">13</span></div>
+      <div class="co-row"><span class="co-label">E.ON</span><div class="co-bar-wrap"><div class="co-bar" style="width:70.6%;background:#002A86"></div></div><span class="co-value">12</span></div>
+      <div class="co-row"><span class="co-label">Danfoss A/S</span><div class="co-bar-wrap"><div class="co-bar" style="width:58.8%;background:#0040C8"></div></div><span class="co-value">10</span></div>
+      <div class="co-row"><span class="co-label">Beiersdorf Shared Services</span><div class="co-bar-wrap"><div class="co-bar" style="width:52.9%;background:#0070F2"></div></div><span class="co-value">9</span></div>
+      <div class="co-row"><span class="co-label">Ford Motor Company</span><div class="co-bar-wrap"><div class="co-bar" style="width:41.2%;background:#4CB1FF"></div></div><span class="co-value">7</span></div>
+      <div class="co-row"><span class="co-label">Nokia</span><div class="co-bar-wrap"><div class="co-bar" style="width:41.2%;background:#4CB1FF"></div></div><span class="co-value">7</span></div>
+      <div class="co-row"><span class="co-label">Novo Nordisk</span><div class="co-bar-wrap"><div class="co-bar" style="width:41.2%;background:#89D1FF"></div></div><span class="co-value">7</span></div>
+      <div class="co-row"><span class="co-label">AMD</span><div class="co-bar-wrap"><div class="co-bar" style="width:35.3%;background:#89D1FF"></div></div><span class="co-value">6</span></div>
     </div>
   </div>
 </div>
@@ -164,7 +165,7 @@
 <div id="tab-asia" class="tab-content">
 <div class="row-3">
   <div class="card"><div class="kpi-number blue">2,076</div><div class="kpi-label">Total Registrations</div></div>
-  <div class="card"><div class="kpi-number navy">600</div><div class="kpi-label">Unique Companies</div></div>
+  <div class="card"><div class="kpi-number navy">548</div><div class="kpi-label">Unique Companies</div></div>
   <div class="card"><div class="kpi-number lightblue">17</div><div class="kpi-label">Countries Reached</div></div>
 </div>
 <div class="row-3">
@@ -178,8 +179,8 @@
     <div class="donut-container"><canvas id="donutChartAsia"></canvas><div class="donut-center"><div class="dc-num">2,076</div><div class="dc-label">Total</div></div></div>
     <div class="eco-legend">
       <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#00144A"></div>SAP Employees</div><div class="eco-legend-right">504 &#183; 24.3%</div></div>
-      <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#0070F2"></div>Partners</div><div class="eco-legend-right">838 &#183; 40.4%</div></div>
-      <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#4CB1FF"></div>Customers</div><div class="eco-legend-right">357 &#183; 17.2%</div></div>
+      <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#0070F2"></div>Partners</div><div class="eco-legend-right">906 &#183; 43.6%</div></div>
+      <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#4CB1FF"></div>Customers</div><div class="eco-legend-right">289 &#183; 13.9%</div></div>
       <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#89D1FF"></div>Consultants</div><div class="eco-legend-right">295 &#183; 14.2%</div></div>
       <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#D1EFFF;border:1px solid #89D1FF"></div>Others</div><div class="eco-legend-right">82 &#183; 3.9%</div></div>
     </div>
@@ -203,33 +204,33 @@
 </div>
 <div class="row-2">
   <div class="card">
-    <div class="section-tag">Top Partner Companies</div><div class="co-meta">838 registrations &#183; 222 unique companies</div>
+    <div class="section-tag">Top Partner Companies</div><div class="co-meta">906 registrations &#183; 194 unique companies</div>
     <div class="co-rows">
-      <div class="co-row"><span class="co-label">Infosys</span><div class="co-bar-wrap"><div class="co-bar" style="width:100%;background:#0070F2"></div></div><span class="co-value">120</span></div>
-      <div class="co-row"><span class="co-label">EY</span><div class="co-bar-wrap"><div class="co-bar" style="width:48.3%;background:#0070F2"></div></div><span class="co-value">58</span></div>
-      <div class="co-row"><span class="co-label">IBM</span><div class="co-bar-wrap"><div class="co-bar" style="width:45%;background:#4CB1FF"></div></div><span class="co-value">54</span></div>
-      <div class="co-row"><span class="co-label">Cognizant</span><div class="co-bar-wrap"><div class="co-bar" style="width:36.7%;background:#4CB1FF"></div></div><span class="co-value">44</span></div>
-      <div class="co-row"><span class="co-label">HCL</span><div class="co-bar-wrap"><div class="co-bar" style="width:30.8%;background:#4CB1FF"></div></div><span class="co-value">37</span></div>
-      <div class="co-row"><span class="co-label">Accenture</span><div class="co-bar-wrap"><div class="co-bar" style="width:25%;background:#89D1FF"></div></div><span class="co-value">30</span></div>
-      <div class="co-row"><span class="co-label">Wipro</span><div class="co-bar-wrap"><div class="co-bar" style="width:24.2%;background:#89D1FF"></div></div><span class="co-value">29</span></div>
-      <div class="co-row"><span class="co-label">Capgemini</span><div class="co-bar-wrap"><div class="co-bar" style="width:24.2%;background:#89D1FF"></div></div><span class="co-value">29</span></div>
-      <div class="co-row"><span class="co-label">TCS</span><div class="co-bar-wrap"><div class="co-bar" style="width:23.3%;background:#B8DCFF"></div></div><span class="co-value">28</span></div>
-      <div class="co-row"><span class="co-label">DXC Technology</span><div class="co-bar-wrap"><div class="co-bar" style="width:19.2%;background:#B8DCFF"></div></div><span class="co-value">23</span></div>
+      <div class="co-row"><span class="co-label">Infosys</span><div class="co-bar-wrap"><div class="co-bar" style="width:100%;background:#0070F2"></div></div><span class="co-value">129</span></div>
+      <div class="co-row"><span class="co-label">Cognizant</span><div class="co-bar-wrap"><div class="co-bar" style="width:96.1%;background:#0070F2"></div></div><span class="co-value">124</span></div>
+      <div class="co-row"><span class="co-label">EY</span><div class="co-bar-wrap"><div class="co-bar" style="width:45%;background:#4CB1FF"></div></div><span class="co-value">58</span></div>
+      <div class="co-row"><span class="co-label">IBM</span><div class="co-bar-wrap"><div class="co-bar" style="width:42.6%;background:#4CB1FF"></div></div><span class="co-value">55</span></div>
+      <div class="co-row"><span class="co-label">Wipro</span><div class="co-bar-wrap"><div class="co-bar" style="width:31.8%;background:#4CB1FF"></div></div><span class="co-value">41</span></div>
+      <div class="co-row"><span class="co-label">HCL</span><div class="co-bar-wrap"><div class="co-bar" style="width:29.5%;background:#89D1FF"></div></div><span class="co-value">38</span></div>
+      <div class="co-row"><span class="co-label">Tech Mahindra</span><div class="co-bar-wrap"><div class="co-bar" style="width:27.9%;background:#89D1FF"></div></div><span class="co-value">36</span></div>
+      <div class="co-row"><span class="co-label">Accenture</span><div class="co-bar-wrap"><div class="co-bar" style="width:24.8%;background:#89D1FF"></div></div><span class="co-value">32</span></div>
+      <div class="co-row"><span class="co-label">Capgemini</span><div class="co-bar-wrap"><div class="co-bar" style="width:23.3%;background:#B8DCFF"></div></div><span class="co-value">30</span></div>
+      <div class="co-row"><span class="co-label">TCS</span><div class="co-bar-wrap"><div class="co-bar" style="width:22.5%;background:#B8DCFF"></div></div><span class="co-value">29</span></div>
     </div>
   </div>
   <div class="card">
-    <div class="section-tag">Top Customer Companies</div><div class="co-meta">357 registrations &#183; 255 unique companies</div>
+    <div class="section-tag">Top Customer Companies</div><div class="co-meta">289 registrations &#183; 228 unique companies</div>
     <div class="co-rows">
-      <div class="co-row"><span class="co-label">Wipro</span><div class="co-bar-wrap"><div class="co-bar" style="width:100%;background:#00144A"></div></div><span class="co-value">12</span></div>
-      <div class="co-row"><span class="co-label">Cognizant</span><div class="co-bar-wrap"><div class="co-bar" style="width:83.3%;background:#00144A"></div></div><span class="co-value">10</span></div>
-      <div class="co-row"><span class="co-label">Infosys</span><div class="co-bar-wrap"><div class="co-bar" style="width:75%;background:#002A86"></div></div><span class="co-value">9</span></div>
-      <div class="co-row"><span class="co-label">Nokia</span><div class="co-bar-wrap"><div class="co-bar" style="width:58.3%;background:#002A86"></div></div><span class="co-value">7</span></div>
-      <div class="co-row"><span class="co-label">Standard Chartered</span><div class="co-bar-wrap"><div class="co-bar" style="width:50%;background:#0040C8"></div></div><span class="co-value">6</span></div>
-      <div class="co-row"><span class="co-label">Woolworths Group</span><div class="co-bar-wrap"><div class="co-bar" style="width:41.7%;background:#0070F2"></div></div><span class="co-value">5</span></div>
-      <div class="co-row"><span class="co-label">South32</span><div class="co-bar-wrap"><div class="co-bar" style="width:41.7%;background:#4CB1FF"></div></div><span class="co-value">5</span></div>
-      <div class="co-row"><span class="co-label">Agilent Technologies</span><div class="co-bar-wrap"><div class="co-bar" style="width:33.3%;background:#4CB1FF"></div></div><span class="co-value">4</span></div>
-      <div class="co-row"><span class="co-label">Queensland Health</span><div class="co-bar-wrap"><div class="co-bar" style="width:33.3%;background:#89D1FF"></div></div><span class="co-value">4</span></div>
-      <div class="co-row"><span class="co-label">Novo Nordisk</span><div class="co-bar-wrap"><div class="co-bar" style="width:33.3%;background:#89D1FF"></div></div><span class="co-value">4</span></div>
+      <div class="co-row"><span class="co-label">Nokia</span><div class="co-bar-wrap"><div class="co-bar" style="width:100%;background:#00144A"></div></div><span class="co-value">7</span></div>
+      <div class="co-row"><span class="co-label">Standard Chartered</span><div class="co-bar-wrap"><div class="co-bar" style="width:85.7%;background:#00144A"></div></div><span class="co-value">6</span></div>
+      <div class="co-row"><span class="co-label">Woolworths Group</span><div class="co-bar-wrap"><div class="co-bar" style="width:71.4%;background:#002A86"></div></div><span class="co-value">5</span></div>
+      <div class="co-row"><span class="co-label">South32</span><div class="co-bar-wrap"><div class="co-bar" style="width:71.4%;background:#002A86"></div></div><span class="co-value">5</span></div>
+      <div class="co-row"><span class="co-label">Agilent Technologies</span><div class="co-bar-wrap"><div class="co-bar" style="width:57.1%;background:#0040C8"></div></div><span class="co-value">4</span></div>
+      <div class="co-row"><span class="co-label">Queensland Health</span><div class="co-bar-wrap"><div class="co-bar" style="width:57.1%;background:#0070F2"></div></div><span class="co-value">4</span></div>
+      <div class="co-row"><span class="co-label">Novo Nordisk</span><div class="co-bar-wrap"><div class="co-bar" style="width:57.1%;background:#4CB1FF"></div></div><span class="co-value">4</span></div>
+      <div class="co-row"><span class="co-label">AMD</span><div class="co-bar-wrap"><div class="co-bar" style="width:42.9%;background:#4CB1FF"></div></div><span class="co-value">3</span></div>
+      <div class="co-row"><span class="co-label">Synopsys</span><div class="co-bar-wrap"><div class="co-bar" style="width:42.9%;background:#89D1FF"></div></div><span class="co-value">3</span></div>
+      <div class="co-row"><span class="co-label">Booking Holdings India</span><div class="co-bar-wrap"><div class="co-bar" style="width:42.9%;background:#89D1FF"></div></div><span class="co-value">3</span></div>
     </div>
   </div>
 </div>
@@ -239,7 +240,7 @@
 <div id="tab-americas" class="tab-content">
 <div class="row-3">
   <div class="card"><div class="kpi-number blue">2,250</div><div class="kpi-label">Total Registrations</div></div>
-  <div class="card"><div class="kpi-number navy">883</div><div class="kpi-label">Unique Companies</div></div>
+  <div class="card"><div class="kpi-number navy">866</div><div class="kpi-label">Unique Companies</div></div>
   <div class="card"><div class="kpi-number lightblue">15</div><div class="kpi-label">Countries Reached</div></div>
 </div>
 <div class="row-3">
@@ -253,8 +254,8 @@
     <div class="donut-container"><canvas id="donutChartAmericas"></canvas><div class="donut-center"><div class="dc-num">2,250</div><div class="dc-label">Total</div></div></div>
     <div class="eco-legend">
       <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#00144A"></div>SAP Employees</div><div class="eco-legend-right">870 &#183; 38.7%</div></div>
-      <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#0070F2"></div>Partners</div><div class="eco-legend-right">538 &#183; 23.9%</div></div>
-      <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#4CB1FF"></div>Customers</div><div class="eco-legend-right">634 &#183; 28.2%</div></div>
+      <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#0070F2"></div>Partners</div><div class="eco-legend-right">562 &#183; 25.0%</div></div>
+      <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#4CB1FF"></div>Customers</div><div class="eco-legend-right">610 &#183; 27.1%</div></div>
       <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#89D1FF"></div>Consultants</div><div class="eco-legend-right">142 &#183; 6.3%</div></div>
       <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#D1EFFF;border:1px solid #89D1FF"></div>Others</div><div class="eco-legend-right">66 &#183; 2.9%</div></div>
     </div>
@@ -278,33 +279,33 @@
 </div>
 <div class="row-2">
   <div class="card">
-    <div class="section-tag">Top Partner Companies</div><div class="co-meta">538 registrations &#183; 240 unique companies</div>
+    <div class="section-tag">Top Partner Companies</div><div class="co-meta">562 registrations &#183; 225 unique companies</div>
     <div class="co-rows">
-      <div class="co-row"><span class="co-label">Infosys</span><div class="co-bar-wrap"><div class="co-bar" style="width:100%;background:#0070F2"></div></div><span class="co-value">66</span></div>
-      <div class="co-row"><span class="co-label">EY</span><div class="co-bar-wrap"><div class="co-bar" style="width:81.8%;background:#0070F2"></div></div><span class="co-value">54</span></div>
-      <div class="co-row"><span class="co-label">IBM</span><div class="co-bar-wrap"><div class="co-bar" style="width:40.9%;background:#4CB1FF"></div></div><span class="co-value">27</span></div>
-      <div class="co-row"><span class="co-label">Deloitte</span><div class="co-bar-wrap"><div class="co-bar" style="width:30.3%;background:#4CB1FF"></div></div><span class="co-value">20</span></div>
-      <div class="co-row"><span class="co-label">TCS</span><div class="co-bar-wrap"><div class="co-bar" style="width:24.2%;background:#4CB1FF"></div></div><span class="co-value">16</span></div>
-      <div class="co-row"><span class="co-label">Cognizant</span><div class="co-bar-wrap"><div class="co-bar" style="width:24.2%;background:#89D1FF"></div></div><span class="co-value">16</span></div>
-      <div class="co-row"><span class="co-label">Capgemini</span><div class="co-bar-wrap"><div class="co-bar" style="width:19.7%;background:#89D1FF"></div></div><span class="co-value">13</span></div>
-      <div class="co-row"><span class="co-label">Accenture</span><div class="co-bar-wrap"><div class="co-bar" style="width:16.7%;background:#89D1FF"></div></div><span class="co-value">11</span></div>
-      <div class="co-row"><span class="co-label">KPMG</span><div class="co-bar-wrap"><div class="co-bar" style="width:13.6%;background:#B8DCFF"></div></div><span class="co-value">9</span></div>
-      <div class="co-row"><span class="co-label">PwC</span><div class="co-bar-wrap"><div class="co-bar" style="width:13.6%;background:#B8DCFF"></div></div><span class="co-value">9</span></div>
+      <div class="co-row"><span class="co-label">Infosys</span><div class="co-bar-wrap"><div class="co-bar" style="width:100%;background:#0070F2"></div></div><span class="co-value">74</span></div>
+      <div class="co-row"><span class="co-label">EY</span><div class="co-bar-wrap"><div class="co-bar" style="width:74.3%;background:#0070F2"></div></div><span class="co-value">55</span></div>
+      <div class="co-row"><span class="co-label">Cognizant</span><div class="co-bar-wrap"><div class="co-bar" style="width:62.2%;background:#4CB1FF"></div></div><span class="co-value">46</span></div>
+      <div class="co-row"><span class="co-label">IBM</span><div class="co-bar-wrap"><div class="co-bar" style="width:36.5%;background:#4CB1FF"></div></div><span class="co-value">27</span></div>
+      <div class="co-row"><span class="co-label">Deloitte</span><div class="co-bar-wrap"><div class="co-bar" style="width:27%;background:#4CB1FF"></div></div><span class="co-value">20</span></div>
+      <div class="co-row"><span class="co-label">TCS</span><div class="co-bar-wrap"><div class="co-bar" style="width:21.6%;background:#89D1FF"></div></div><span class="co-value">16</span></div>
+      <div class="co-row"><span class="co-label">Capgemini</span><div class="co-bar-wrap"><div class="co-bar" style="width:17.6%;background:#89D1FF"></div></div><span class="co-value">13</span></div>
+      <div class="co-row"><span class="co-label">Accenture</span><div class="co-bar-wrap"><div class="co-bar" style="width:16.2%;background:#89D1FF"></div></div><span class="co-value">12</span></div>
+      <div class="co-row"><span class="co-label">Accel4</span><div class="co-bar-wrap"><div class="co-bar" style="width:14.9%;background:#B8DCFF"></div></div><span class="co-value">11</span></div>
+      <div class="co-row"><span class="co-label">KPMG</span><div class="co-bar-wrap"><div class="co-bar" style="width:13.5%;background:#B8DCFF"></div></div><span class="co-value">10</span></div>
     </div>
   </div>
   <div class="card">
-    <div class="section-tag">Top Customer Companies</div><div class="co-meta">634 registrations &#183; 476 unique companies</div>
+    <div class="section-tag">Top Customer Companies</div><div class="co-meta">610 registrations &#183; 465 unique companies</div>
     <div class="co-rows">
       <div class="co-row"><span class="co-label">Agilent Technologies</span><div class="co-bar-wrap"><div class="co-bar" style="width:100%;background:#00144A"></div></div><span class="co-value">10</span></div>
-      <div class="co-row"><span class="co-label">Infosys</span><div class="co-bar-wrap"><div class="co-bar" style="width:80%;background:#00144A"></div></div><span class="co-value">8</span></div>
-      <div class="co-row"><span class="co-label">Ford Motor Company</span><div class="co-bar-wrap"><div class="co-bar" style="width:70%;background:#002A86"></div></div><span class="co-value">7</span></div>
+      <div class="co-row"><span class="co-label">Ford Motor Company</span><div class="co-bar-wrap"><div class="co-bar" style="width:70%;background:#00144A"></div></div><span class="co-value">7</span></div>
       <div class="co-row"><span class="co-label">United Nations</span><div class="co-bar-wrap"><div class="co-bar" style="width:60%;background:#002A86"></div></div><span class="co-value">6</span></div>
-      <div class="co-row"><span class="co-label">Dow</span><div class="co-bar-wrap"><div class="co-bar" style="width:50%;background:#0040C8"></div></div><span class="co-value">5</span></div>
-      <div class="co-row"><span class="co-label">Apple</span><div class="co-bar-wrap"><div class="co-bar" style="width:50%;background:#0070F2"></div></div><span class="co-value">5</span></div>
-      <div class="co-row"><span class="co-label">General Motors</span><div class="co-bar-wrap"><div class="co-bar" style="width:40%;background:#4CB1FF"></div></div><span class="co-value">4</span></div>
+      <div class="co-row"><span class="co-label">Dow</span><div class="co-bar-wrap"><div class="co-bar" style="width:50%;background:#002A86"></div></div><span class="co-value">5</span></div>
+      <div class="co-row"><span class="co-label">Apple</span><div class="co-bar-wrap"><div class="co-bar" style="width:50%;background:#0040C8"></div></div><span class="co-value">5</span></div>
+      <div class="co-row"><span class="co-label">General Motors</span><div class="co-bar-wrap"><div class="co-bar" style="width:40%;background:#0070F2"></div></div><span class="co-value">4</span></div>
       <div class="co-row"><span class="co-label">Aaon, Inc.</span><div class="co-bar-wrap"><div class="co-bar" style="width:40%;background:#4CB1FF"></div></div><span class="co-value">4</span></div>
-      <div class="co-row"><span class="co-label">EY</span><div class="co-bar-wrap"><div class="co-bar" style="width:40%;background:#89D1FF"></div></div><span class="co-value">4</span></div>
-      <div class="co-row"><span class="co-label">Medtronic</span><div class="co-bar-wrap"><div class="co-bar" style="width:40%;background:#89D1FF"></div></div><span class="co-value">4</span></div>
+      <div class="co-row"><span class="co-label">Medtronic</span><div class="co-bar-wrap"><div class="co-bar" style="width:40%;background:#4CB1FF"></div></div><span class="co-value">4</span></div>
+      <div class="co-row"><span class="co-label">Trellix</span><div class="co-bar-wrap"><div class="co-bar" style="width:40%;background:#89D1FF"></div></div><span class="co-value">4</span></div>
+      <div class="co-row"><span class="co-label">Bombardier Inc</span><div class="co-bar-wrap"><div class="co-bar" style="width:30%;background:#89D1FF"></div></div><span class="co-value">3</span></div>
     </div>
   </div>
 </div>
@@ -314,7 +315,7 @@
 <div id="tab-mee" class="tab-content">
 <div class="row-3">
   <div class="card"><div class="kpi-number blue">1,112</div><div class="kpi-label">Total Registrations</div></div>
-  <div class="card"><div class="kpi-number navy">396</div><div class="kpi-label">Unique Companies</div></div>
+  <div class="card"><div class="kpi-number navy">387</div><div class="kpi-label">Unique Companies</div></div>
   <div class="card"><div class="kpi-number lightblue">16</div><div class="kpi-label">Countries Reached</div></div>
 </div>
 <div class="row-3">
@@ -328,8 +329,8 @@
     <div class="donut-container"><canvas id="donutChartMEE"></canvas><div class="donut-center"><div class="dc-num">1,112</div><div class="dc-label">Total</div></div></div>
     <div class="eco-legend">
       <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#00144A"></div>SAP Employees</div><div class="eco-legend-right">452 &#183; 40.6%</div></div>
-      <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#0070F2"></div>Partners</div><div class="eco-legend-right">283 &#183; 25.4%</div></div>
-      <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#4CB1FF"></div>Customers</div><div class="eco-legend-right">254 &#183; 22.8%</div></div>
+      <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#0070F2"></div>Partners</div><div class="eco-legend-right">290 &#183; 26.1%</div></div>
+      <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#4CB1FF"></div>Customers</div><div class="eco-legend-right">247 &#183; 22.2%</div></div>
       <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#89D1FF"></div>Consultants</div><div class="eco-legend-right">100 &#183; 9.0%</div></div>
       <div class="eco-legend-row"><div class="eco-legend-left"><div class="eco-dot" style="background:#D1EFFF;border:1px solid #89D1FF"></div>Others</div><div class="eco-legend-right">23 &#183; 2.1%</div></div>
     </div>
@@ -353,22 +354,22 @@
 </div>
 <div class="row-2">
   <div class="card">
-    <div class="section-tag">Top Partner Companies</div><div class="co-meta">283 registrations &#183; 135 unique companies</div>
+    <div class="section-tag">Top Partner Companies</div><div class="co-meta">290 registrations &#183; 128 unique companies</div>
     <div class="co-rows">
-      <div class="co-row"><span class="co-label">Infosys</span><div class="co-bar-wrap"><div class="co-bar" style="width:100%;background:#0070F2"></div></div><span class="co-value">29</span></div>
-      <div class="co-row"><span class="co-label">Accenture</span><div class="co-bar-wrap"><div class="co-bar" style="width:65.5%;background:#0070F2"></div></div><span class="co-value">19</span></div>
-      <div class="co-row"><span class="co-label">Capgemini</span><div class="co-bar-wrap"><div class="co-bar" style="width:51.7%;background:#4CB1FF"></div></div><span class="co-value">15</span></div>
-      <div class="co-row"><span class="co-label">EY</span><div class="co-bar-wrap"><div class="co-bar" style="width:48.3%;background:#4CB1FF"></div></div><span class="co-value">14</span></div>
-      <div class="co-row"><span class="co-label">PwC</span><div class="co-bar-wrap"><div class="co-bar" style="width:41.4%;background:#4CB1FF"></div></div><span class="co-value">12</span></div>
-      <div class="co-row"><span class="co-label">adesso business consulting AG</span><div class="co-bar-wrap"><div class="co-bar" style="width:31%;background:#89D1FF"></div></div><span class="co-value">9</span></div>
-      <div class="co-row"><span class="co-label">BearingPoint GmbH</span><div class="co-bar-wrap"><div class="co-bar" style="width:20.7%;background:#89D1FF"></div></div><span class="co-value">6</span></div>
-      <div class="co-row"><span class="co-label">DXC Technology</span><div class="co-bar-wrap"><div class="co-bar" style="width:20.7%;background:#89D1FF"></div></div><span class="co-value">6</span></div>
-      <div class="co-row"><span class="co-label">MHP Management IT-Beratung</span><div class="co-bar-wrap"><div class="co-bar" style="width:20.7%;background:#B8DCFF"></div></div><span class="co-value">6</span></div>
-      <div class="co-row"><span class="co-label">TCS</span><div class="co-bar-wrap"><div class="co-bar" style="width:17.2%;background:#B8DCFF"></div></div><span class="co-value">5</span></div>
+      <div class="co-row"><span class="co-label">Infosys</span><div class="co-bar-wrap"><div class="co-bar" style="width:100%;background:#0070F2"></div></div><span class="co-value">31</span></div>
+      <div class="co-row"><span class="co-label">Accenture</span><div class="co-bar-wrap"><div class="co-bar" style="width:61.3%;background:#0070F2"></div></div><span class="co-value">19</span></div>
+      <div class="co-row"><span class="co-label">Capgemini</span><div class="co-bar-wrap"><div class="co-bar" style="width:48.4%;background:#4CB1FF"></div></div><span class="co-value">15</span></div>
+      <div class="co-row"><span class="co-label">EY</span><div class="co-bar-wrap"><div class="co-bar" style="width:45.2%;background:#4CB1FF"></div></div><span class="co-value">14</span></div>
+      <div class="co-row"><span class="co-label">PwC</span><div class="co-bar-wrap"><div class="co-bar" style="width:41.9%;background:#4CB1FF"></div></div><span class="co-value">13</span></div>
+      <div class="co-row"><span class="co-label">adesso business consulting AG</span><div class="co-bar-wrap"><div class="co-bar" style="width:29%;background:#89D1FF"></div></div><span class="co-value">9</span></div>
+      <div class="co-row"><span class="co-label">Cognizant</span><div class="co-bar-wrap"><div class="co-bar" style="width:25.8%;background:#89D1FF"></div></div><span class="co-value">8</span></div>
+      <div class="co-row"><span class="co-label">BearingPoint</span><div class="co-bar-wrap"><div class="co-bar" style="width:19.4%;background:#89D1FF"></div></div><span class="co-value">6</span></div>
+      <div class="co-row"><span class="co-label">NTT DATA</span><div class="co-bar-wrap"><div class="co-bar" style="width:19.4%;background:#B8DCFF"></div></div><span class="co-value">6</span></div>
+      <div class="co-row"><span class="co-label">DXC Technology</span><div class="co-bar-wrap"><div class="co-bar" style="width:19.4%;background:#B8DCFF"></div></div><span class="co-value">6</span></div>
     </div>
   </div>
   <div class="card">
-    <div class="section-tag">Top Customer Companies</div><div class="co-meta">252 registrations &#183; 181 unique companies</div>
+    <div class="section-tag">Top Customer Companies</div><div class="co-meta">245 registrations &#183; 175 unique companies</div>
     <div class="co-rows">
       <div class="co-row"><span class="co-label">ALDI</span><div class="co-bar-wrap"><div class="co-bar" style="width:100%;background:#00144A"></div></div><span class="co-value">13</span></div>
       <div class="co-row"><span class="co-label">E.ON</span><div class="co-bar-wrap"><div class="co-bar" style="width:92.3%;background:#00144A"></div></div><span class="co-value">12</span></div>
@@ -425,7 +426,7 @@
       <div class="co-row"><span class="co-label">PwC</span><div class="co-bar-wrap"><div class="co-bar" style="width:100%;background:#0070F2"></div></div><span class="co-value">4</span></div>
       <div class="co-row"><span class="co-label">EY</span><div class="co-bar-wrap"><div class="co-bar" style="width:50%;background:#4CB1FF"></div></div><span class="co-value">2</span></div>
       <div class="co-row"><span class="co-label">Swisscom AG</span><div class="co-bar-wrap"><div class="co-bar" style="width:50%;background:#4CB1FF"></div></div><span class="co-value">2</span></div>
-      <div class="co-row"><span class="co-label">Cognizant Technology Solutions AG</span><div class="co-bar-wrap"><div class="co-bar" style="width:25%;background:#89D1FF"></div></div><span class="co-value">1</span></div>
+      <div class="co-row"><span class="co-label">Cognizant</span><div class="co-bar-wrap"><div class="co-bar" style="width:25%;background:#89D1FF"></div></div><span class="co-value">1</span></div>
       <div class="co-row"><span class="co-label">NOVO Business Consultants AG</span><div class="co-bar-wrap"><div class="co-bar" style="width:25%;background:#89D1FF"></div></div><span class="co-value">1</span></div>
       <div class="co-row"><span class="co-label">inpeek AG</span><div class="co-bar-wrap"><div class="co-bar" style="width:25%;background:#89D1FF"></div></div><span class="co-value">1</span></div>
       <div class="co-row"><span class="co-label">s-peers AG</span><div class="co-bar-wrap"><div class="co-bar" style="width:25%;background:#B8DCFF"></div></div><span class="co-value">1</span></div>
@@ -457,10 +458,10 @@ const donutCfg = (id, data) => new Chart(document.getElementById(id).getContext(
   data: { labels: ["SAP Employees","Partners","Customers","Consultants","Others"], datasets: [{ data, backgroundColor: ["#00144A","#0070F2","#4CB1FF","#89D1FF","#D1EFFF"], borderWidth: 2, borderColor: '#FFF', hoverOffset: 4 }] },
   options: { responsive: true, maintainAspectRatio: true, cutout: '68%', plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => { const t=c.dataset.data.reduce((a,b)=>a+b,0); return ' '+c.label+': '+c.parsed.toLocaleString()+' ('+(c.parsed/t*100).toFixed(1)+'%)'; } } } } }
 });
-donutCfg('donutChart',         [2221,2020,1536,634,195]);
-donutCfg('donutChartAsia',     [504,838,357,295,82]);
-donutCfg('donutChartAmericas', [870,538,634,142,66]);
-donutCfg('donutChartMEE',      [452,283,254,100,23]);
+donutCfg('donutChart',         [2221,2125,1431,634,195]);
+donutCfg('donutChartAsia',     [504,906,289,295,82]);
+donutCfg('donutChartAmericas', [870,562,610,142,66]);
+donutCfg('donutChartMEE',      [452,290,247,100,23]);
 donutCfg('donutChartSwiss',    [56,24,34,10,1]);
 function switchTab(btn, name) {
   document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
